@@ -2,6 +2,7 @@
 #if __has_include("keymap.h")
 #    include "keymap.h"
 #endif
+#include "gpio.h"
 
 enum sofle_layers {
     _BASE, // Base layer with QWERTY layout
@@ -61,5 +62,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 };
 #endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
 
-
+// Use the led for caps and num lock
+// Possibly not needed with setting this for caps lock in config.h
+// void keyboard_pre_init_user(void) {
+//     gpio_set_pin_output(24);
+//     gpio_write_pin_high(24);
+// }
 

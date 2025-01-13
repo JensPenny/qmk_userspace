@@ -22,3 +22,7 @@
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_RAINBOW_BEACON
 #define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
+// Liatris led on caps lock
+#define LED_CAPS_LOCK_PIN 24
+#define LED_PIN_ON_STATE 0
+// #define SPLIT_LED_STATE_ENABLE //Possibly required to get the led state to the other KB. See https://docs.qmk.fm/features/split_keyboard#data-sync-options
